@@ -2,6 +2,10 @@
   "name": "chatRooms",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "npm run dev"
+  },
   "repository": "https://github.com/Sir0xb/chatRooms.git",
   "author": "Sir0xb <yinyongji@yidian-inc.com>",
   "license": "MIT",
