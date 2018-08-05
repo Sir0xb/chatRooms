@@ -2,8 +2,29 @@
 <html>
 <head>
 	<title>Server</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-	Hey yo~~
+	<div id="content">
+		<div id="room">
+			<div id="room-list"></div>
+			<div id="messages"></div>
+		</div>
+		<form id="send-form">
+			<input id="send-message" />
+			<input id="send-button" type="submit" value="Send" />
+			<div id="help">
+				Chat commands:
+				<ul>
+					<li>Change nickname: <code>/nick</code></li>
+					<li>Join/create room: <code>/join</code></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="javascripts/chat.js"></script>
+	<script src="javascripts/chat_ui.js"></script>
 </body>
 </html>
